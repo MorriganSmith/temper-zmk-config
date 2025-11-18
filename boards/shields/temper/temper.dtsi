@@ -66,29 +66,6 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)  RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9)
     };
 };
 
-&pinctrl {
-    /* configuration for spi0 device, default state */
-    spi0_default: spi0_default {
-        /* node name is arbitrary */
-        group1 {
-            /* main role: configure P0.01 as SPI clock, P0.02 as SPI MOSI, P0.03 as SPI MISO */
-            psels = <NRF_PSEL(SPIM_SCK, 0, 20)>,
-                    <NRF_PSEL(SPIM_MOSI, 0, 17)>,
-        };
-    };
-
-    /* configuration for spi0 device, sleep state */
-    spi0_sleep: spi0_sleep {
-        group1 {
-            /* main role: configure P0.01 as SPI clock, P0.02 as SPI MOSI, P0.03 as SPI MISO */
-            psels = <NRF_PSEL(SPIM_SCK, 0, 20)>,
-                    <NRF_PSEL(SPIM_MOSI, 0, 17)>,
-            low-power-enable;
-        };
-    };
-
-};
-
 lpm_view_spi: &spi0 {
     compatible = "nordic,nrf-spim";
     pinctrl-0 = <&spi0_default>;
