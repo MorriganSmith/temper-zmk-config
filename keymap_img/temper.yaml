@@ -117,8 +117,8 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - SLCK
-    - PAUSE BREAK
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   - - '&sys_reset'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
