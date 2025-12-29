@@ -125,3 +125,8 @@ layers:
     - BSPC
     - DEL
     - '&bootloader'
+combos:
+- p: [16, 17]
+  k: BACKSPACE
+- p: [17, 18]
+  k: DEL
