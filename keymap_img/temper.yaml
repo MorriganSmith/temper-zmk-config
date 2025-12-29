@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: temper}
 layers:
-  default:
+  QWERTY:
   - [Q, W, E, R, T, Y, U, I, O, P]
   - - A
     - S
@@ -11,7 +11,7 @@ layers:
     - J
     - K
     - L
-    - {t: ',', s: ;}
+    - {t: ;, s: ':'}
   - - Z
     - X
     - C
@@ -19,188 +19,109 @@ layers:
     - B
     - N
     - M
-    - {t: ',', s: ;}
-    - {t: ., s: ':'}
-    - {t: '?', s: '!'}
-  - - cmd
-    - num
-    - {t: ⇧, s: ⇪}
-    - SPACE
-    - nav
-    - {t: default, h: toggle}
-  game:
+    - {t: ',', s: <}
+    - {t: ., s: '>'}
+    - /
+  - ['&new_behavior', NUMBER, SPACE, ENTER, SYMBOL, '&td0']
+  NUMBER:
+  - [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9']
   - - ↹
-    - Q
-    - W
-    - E
-    - R
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - ⇧
-    - A
-    - S
-    - D
-    - F
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - ⌃
-    - Z
-    - X
-    - C
-    - V
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - ESC
-    - {t: ▽, type: trans}
-    - SPACE
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  num:
-  - - '~'
-    - '@'
-    - '{'
-    - '}'
-    - '%'
-    - '*'
-    - '7'
-    - '8'
-    - '9'
-    - {t: '-', s: _}
-  - [^, '#', (, ), $, _, '4', '5', '6', +]
-  - - {t: '&', s: '|'}
-    - <
-    - {t: '[', s: '{'}
-    - {t: ']', s: '}'}
-    - '>'
-    - {t: /, s: \}
-    - '1'
-    - '2'
-    - '3'
-    - {t: '=', s: +}
-  - - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
-    - '0'
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  nav:
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - DEL
-    - HOME
-    - END
-    - ↹
-    - BSPC
-  - - {t: ⇧, h: sticky}
-    - {t: ⌃, h: sticky}
-    - {t: ⎇, h: sticky}
-    - {t: ⌘, h: sticky}
-    - {t: ▽, type: trans}
+    - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '2'}
+    - {t: BT, h: '3'}
     - ←
     - ↓
     - ↑
     - →
-    - {t: ESC, s: '`'}
+    - '0'
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - RET
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
-  fun:
-  - - {t: game, h: toggle}
-    - MUTE
-    - VOL DN
-    - VOL UP
+    - BSPC
+    - DEL
+    - BT CLR ALL
+  SYMBOL:
+  - - {t: ▽, type: trans}
+    - '!'
+    - '@'
+    - '#'
+    - $
+    - '%'
+    - ^
+    - '&'
+    - '*'
+    - (
+  - - {t: ▽, type: trans}
+    - {t: /, s: '?'}
+    - {t: '-', s: _}
+    - {t: '=', s: +}
+    - {t: '[', s: '{'}
+    - {t: ']', s: '}'}
+    - \
+    - {t: '`', s: '~'}
+    - _
+    - )
+  - - {t: ▽, type: trans}
     - OUT USB
-    - {t: ▽, type: trans}
-    - F7
-    - F8
-    - F9
-    - F12
-  - - {t: BT, h: '0'}
-    - {t: BT, h: '1'}
-    - {t: BT, h: '2'}
-    - {t: BT, h: '3'}
-    - {t: BT, h: '4'}
-    - {t: ▽, type: trans}
-    - F4
-    - F5
-    - F6
-    - F11
-  - - BT CLR
-    - PREV
-    - PP
-    - NEXT
     - OUT BLE
     - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - +
+    - '{'
+    - '}'
+    - '|'
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - SPACE
+    - RET
+    - {type: held}
+    - {t: ▽, type: trans}
+  FN:
+  - - {t: ▽, type: trans}
     - F1
     - F2
     - F3
+    - F4
+    - F5
+    - F6
+    - F7
+    - F8
+    - F9
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - PSCRN
     - F10
   - - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
-  cmd:
-  - - ⌘Q
-    - ⌘W
-    - F
-    - Gui+P
-    - B
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - ⇧
-    - ⌃
-    - ⎇
-    - ⌘
-    - Gui+G
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
+    - SLCK
+    - PAUSE
+  - - '&sys_reset'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - ⌘Z
-    - ⌘X
-    - ⌘C
-    - D
-    - ⌘V
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - BSPC
+    - DEL
+    - '&bootloader'
