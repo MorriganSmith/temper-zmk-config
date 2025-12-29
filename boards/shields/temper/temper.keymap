@@ -1,1 +1,1 @@
-#include <temper_editor.keymap>
+#include "../../../config/temper_editor.keymap"
