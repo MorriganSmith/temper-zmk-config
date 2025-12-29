@@ -87,7 +87,7 @@
             bindings = <
 &trans  &kp F1  &kp F2      &kp F3  &kp F4  &kp F5    &kp F6   &kp F7       &kp F8     &kp F9
 &trans  &trans  &trans      &trans  &trans  &trans    &trans   &trans       &kp PSCRN  &kp F10
-&trans  &trans  &trans      &trans  &trans  &trans    &trans   &trans       &kp SLCK   &kp PAUSE
+&trans  &trans  &trans      &trans  &trans  &trans    &trans   &trans       &kp SLCK   &kp PAUSE_BREAK
                 &sys_reset  &trans  &trans  &kp BSPC  &kp DEL  &bootloader
             >;
         };
