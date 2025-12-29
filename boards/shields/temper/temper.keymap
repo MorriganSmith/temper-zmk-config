@@ -20,7 +20,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp LSHFT>, <&kp CAPS>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
         /* Tap dance: tap = LALT, double tap = LGUI */
@@ -29,7 +29,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Alt/Gui Tap Dance";
             #binding-cells = <0>;
-            bindings = <&kp LALT>, <&kp LGUI>;
+            bindings = <&kp LEFT_ALT>, <&kp LEFT_GUI>;
         };
     };
 
