@@ -73,7 +73,7 @@
 &kp Q           &kp W           &kp E               &kp R             &kp T        &kp Y        &kp U              &kp I                &kp O            &kp P
 &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI
 &lt 4 Z         &kp X           &kp C               &kp V             &kp B        &kp N        &kp M              &kp COMMA            &kp DOT          &lt 4 FSLH
-                                &kp ESCAPE          &lt 5 TAB         &lt 3 SPACE  &lt 1 ENTER  &mo 2              &kp A
+                                &kp ESCAPE          &lt 5 TAB         &lt 3 SPACE  &lt 1 ENTER  &mo 2              &lt 6 LA(LSHFT)
             >;
         };
 
@@ -82,10 +82,10 @@
         layer1 {
             display-name = "NUMBER";
             bindings = <
-&kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET  &kp LC(Y)     &kp LC(C)       &kp LC(V)         &kp LC(X)     &kp LC(Z)
-&kp SEMI          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL          &kp CAPSLOCK  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LGUI
-&kp TILDE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH      &trans        &trans          &trans            &trans        &trans
-                                &trans        &kp NUMBER_0  &trans             &kp BSPC      &kp DEL         &trans
+&kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL  &kp LC(Y)     &kp LC(C)       &kp LC(V)         &kp LC(X)     &kp LC(Z)
+&kp SEMI          &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &kp CAPSLOCK  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LGUI
+&kp TILDE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS   &trans        &trans          &trans            &trans        &trans
+                                &trans        &kp NUMBER_0  &trans     &kp BSPC      &kp DEL         &trans
             >;
         };
 
@@ -94,10 +94,10 @@
         layer2 {
             display-name = "SYMBOL";
             bindings = <
-&kp LBRC   &kp AMPERSAND    &kp ASTERISK  &kp MINUS  &kp RBRC   &trans   &trans          &trans    &trans    &trans
-&kp COLON  &kp DOLLAR       &kp PERCENT   &kp CARET  &kp PLUS   &trans   &kp LEFT_SHIFT  &kp LBKT  &kp RBKT  &kp APOS
-&kp TILDE  &kp EXCLAMATION  &kp AT        &kp HASH   &kp PIPE   &trans   &trans          &kp LBRC  &kp RBRC  &trans
-                            &kp LPAR      &kp RPAR   &kp UNDER  &kp RET  &trans          &trans
+&kp LBRC   &kp AMPERSAND    &kp ASTERISK  &kp MINUS  &kp RBRC       &trans   &trans          &trans    &trans    &trans
+&kp COLON  &kp DOLLAR       &kp PERCENT   &kp CARET  &kp PLUS       &trans   &kp LEFT_SHIFT  &kp LBKT  &kp RBKT  &kp APOS
+&kp TILDE  &kp EXCLAMATION  &kp AT        &kp HASH   &kp BACKSLASH  &trans   &trans          &kp LBRC  &kp RBRC  &trans
+                            &kp LPAR      &kp RPAR   &kp UNDER      &kp RET  &trans          &trans
             >;
         };
 
@@ -106,8 +106,8 @@
         FUNCTION {
             display-name = "FN";
             bindings = <
-&kp F12  &kp F7  &kp F8      &kp F9  &trans  &kp F5    &kp F6   &kp F7       &kp F8     &kp F9
-&kp F11  &kp F4  &kp F5      &kp F6  &trans  &trans    &trans   &trans       &kp PSCRN  &kp F10
+&kp F12  &kp F7  &kp F8      &kp F9  &trans  &trans    &trans   &trans       &trans     &trans
+&kp F11  &kp F4  &kp F5      &kp F6  &trans  &trans    &trans   &trans       &kp PSCRN  &trans
 &kp F10  &kp F1  &kp F2      &kp F3  &trans  &trans    &trans   &trans       &trans     &trans
                  &sys_reset  &trans  &trans  &kp BSPC  &kp DEL  &bootloader
             >;
@@ -115,18 +115,18 @@
 
         BUTTON {
             bindings = <
-&kp LC(TAB)      &trans     &kp LC(W)  &kp LC(R)  &trans     &trans  &trans  &trans  &trans  &trans
-&kp LC(LS(TAB))  &kp LC(A)  &kp LC(Z)  &kp LC(Y)  &trans     &trans  &trans  &trans  &trans  &trans
-&trans           &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)  &trans  &trans  &trans  &trans  &trans
-                            &trans     &trans     &trans     &trans  &trans  &trans
+&kp LC(TAB)      &trans     &kp LC(W)      &kp LC(R)  &kp LC(T)      &trans  &trans  &trans  &trans  &trans
+&kp LC(LS(TAB))  &kp LC(A)  &kp LC(Z)      &kp LC(Y)  &kp LG(LS(S))  &trans  &trans  &trans  &trans  &trans
+&trans           &kp LC(X)  &kp LC(C)      &kp LC(V)  &kp LC(Y)      &trans  &trans  &trans  &trans  &trans
+                            &kp LC(LA(S))  &trans     &trans         &trans  &trans  &trans
             >;
         };
 
         NAV {
             bindings = <
-&trans            &trans          &kp UP_ARROW  &trans     &trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans
+&trans            &kp HOME        &kp UP_ARROW  &kp END    &trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans
 &kp LEFT_SHIFT    &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&kp LEFT_CONTROL  &bt BT_CLR      &trans        &trans     &trans  &trans  &msc SCRL_UP    &msc SCRL_DOWN  &trans           &trans
+&kp LEFT_CONTROL  &trans          &trans        &trans     &trans  &trans  &msc SCRL_UP    &msc SCRL_DOWN  &trans           &trans
                                   &trans        &trans     &trans  &trans  &trans          &trans
             >;
         };
