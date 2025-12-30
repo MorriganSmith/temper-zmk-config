@@ -27,7 +27,7 @@ layers:
     - {t: SPACE, h: FN}
     - {t: ENTER, h: NUMBER}
     - SYMBOL
-    - {t: Sft+⎇, h: MEDIA}
+    - {t: Alt+LEFT SHIFT, h: MEDIA}
   NUMBER:
   - ['[', '7', '8', '9', ']', Ctl+Y, Ctl+C, Ctl+V, Ctl+X, Ctl+Z]
   - - {t: ;, s: ':'}
