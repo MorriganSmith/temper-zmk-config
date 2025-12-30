@@ -94,10 +94,10 @@
         layer2 {
             display-name = "SYMBOL";
             bindings = <
-&kp LBRC   &kp AMPERSAND    &kp ASTERISK  &kp MINUS  &kp RBRC   &trans   &trans  &trans    &trans    &trans
-&kp COLON  &kp DOLLAR       &kp PERCENT   &kp CARET  &kp PLUS   &trans   &trans  &kp LBKT  &kp RBKT  &kp APOS
-&kp TILDE  &kp EXCLAMATION  &kp AT        &kp HASH   &kp PIPE   &trans   &trans  &kp LBRC  &kp RBRC  &trans
-                            &kp LPAR      &kp RPAR   &kp SPACE  &kp RET  &trans  &trans
+&kp LBRC   &kp AMPERSAND    &kp ASTERISK  &kp MINUS  &kp RBRC   &trans   &trans          &trans    &trans    &trans
+&kp COLON  &kp DOLLAR       &kp PERCENT   &kp CARET  &kp PLUS   &trans   &kp LEFT_SHIFT  &kp LBKT  &kp RBKT  &kp APOS
+&kp TILDE  &kp EXCLAMATION  &kp AT        &kp HASH   &kp PIPE   &trans   &trans          &kp LBRC  &kp RBRC  &trans
+                            &kp LPAR      &kp RPAR   &kp SPACE  &kp RET  &trans          &trans
             >;
         };
 
