@@ -27,7 +27,7 @@ layers:
     - {t: SPACE, h: FN}
     - {t: ENTER, h: NUMBER}
     - SYMBOL
-    - MEDIA
+    - A
   NUMBER:
   - ['[', '7', '8', '9', ']', Ctl+Y, Ctl+C, Ctl+V, Ctl+X, Ctl+Z]
   - - {t: ;, s: ':'}
@@ -189,7 +189,7 @@ layers:
     - '&mmv MOVE_RIGHT'
     - {t: ▽, type: trans}
   - - ⌃
-    - {t: ▽, type: trans}
+    - BT CLR
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -246,7 +246,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {type: held}
+    - {t: ▽, type: trans}
 combos:
 - p: [16, 17]
   k: BACKSPACE
