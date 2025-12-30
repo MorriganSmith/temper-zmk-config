@@ -11,8 +11,8 @@ layers:
     - {t: J, h: RIGHT SHIFT}
     - {t: K, h: ⌃}
     - {t: L, h: ⎇}
-    - {t: '''', h: ⌘, s: '"'}
-  - - {t: Z, h: button}
+    - {t: ;, h: ⌘, s: ':'}
+  - - {t: Z, h: BUTTON}
     - X
     - C
     - V
@@ -21,13 +21,13 @@ layers:
     - M
     - {t: ',', s: <}
     - {t: ., s: '>'}
-    - {t: /, h: button}
+    - {t: /, h: BUTTON}
   - - ⎋
-    - {t: ↹, h: Navigation}
+    - {t: ↹, h: NAV}
     - {t: SPACE, h: FN}
     - {t: ENTER, h: NUMBER}
     - SYMBOL
-    - {t: Sft+⎇, h: media}
+    - {t: Sft+⎇, h: MEDIA}
   NUMBER:
   - ['[', '7', '8', '9', ']', Ctl+Y, Ctl+C, Ctl+V, Ctl+X, Ctl+Z]
   - - {t: ;, s: ':'}
@@ -35,7 +35,7 @@ layers:
     - '5'
     - '6'
     - {t: '=', s: +}
-    - {t: ▽, type: trans}
+    - CAPSLOCK
     - LEFT SHIFT
     - ⌃
     - ⎇
@@ -76,7 +76,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: '[', s: '{'}
     - {t: ']', s: '}'}
-    - {t: ▽, type: trans}
+    - {t: '''', s: '"'}
   - - '~'
     - '!'
     - '@'
@@ -130,7 +130,7 @@ layers:
     - BSPC
     - DEL
     - '&bootloader'
-  button:
+  BUTTON:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -167,7 +167,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  Navigation:
+  NAV:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - UP ARROW
@@ -204,7 +204,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  media:
+  MEDIA:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
