@@ -86,10 +86,10 @@
         layer2 {
             display-name = "SYMBOL";
             bindings = <
-&kp LBRC   &kp AMPERSAND    &kp ASTERISK  &kp MINUS  &kp RBRC   &kp PRCNT  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR
-&kp COLON  &kp DOLLAR       &kp PERCENT   &kp CARET  &kp LBKT   &kp RBKT   &kp BSLH   &kp GRAVE  &kp UNDER  &kp RPAR
-&kp TILDE  &kp EXCLAMATION  &kp AT        &kp HASH   &trans     &trans     &kp PLUS   &kp LBRC   &kp RBRC   &kp PIPE
-                            &trans        &trans     &kp SPACE  &kp RET    &trans     &trans
+&kp LBRC   &kp AMPERSAND    &kp ASTERISK  &kp MINUS  &kp RBRC   &trans    &trans    &trans    &trans    &trans
+&kp COLON  &kp DOLLAR       &kp PERCENT   &kp CARET  &kp PLUS   &kp RBKT  &kp BSLH  &kp LBKT  &kp RBKT  &kp RPAR
+&kp TILDE  &kp EXCLAMATION  &kp AT        &kp HASH   &kp PIPE   &trans    &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE
+                            &kp LPAR      &kp RPAR   &kp SPACE  &kp RET   &trans    &trans
             >;
         };
 
