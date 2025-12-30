@@ -73,7 +73,7 @@
 &kp Q           &kp W           &kp E               &kp R             &kp T        &kp Y        &kp U              &kp I                &kp O            &kp P
 &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_ALT L  &mt RIGHT_GUI SEMI
 &lt 4 Z         &kp X           &kp C               &kp V             &kp B        &kp N        &kp M              &kp COMMA            &kp DOT          &lt 4 FSLH
-                                &kp ESCAPE          &lt 5 TAB         &lt 3 SPACE  &lt 1 ENTER  &mo 2              &lt 6 LS(RALT)
+                                &kp ESCAPE          &lt 5 TAB         &lt 3 SPACE  &lt 1 ENTER  &mo 2              &lt 6 LS(LALT)
             >;
         };
 
@@ -97,7 +97,7 @@
 &kp LBRC   &kp AMPERSAND    &kp ASTERISK  &kp MINUS  &kp RBRC   &trans   &trans          &trans    &trans    &trans
 &kp COLON  &kp DOLLAR       &kp PERCENT   &kp CARET  &kp PLUS   &trans   &kp LEFT_SHIFT  &kp LBKT  &kp RBKT  &kp APOS
 &kp TILDE  &kp EXCLAMATION  &kp AT        &kp HASH   &kp PIPE   &trans   &trans          &kp LBRC  &kp RBRC  &trans
-                            &kp LPAR      &kp RPAR   &kp SPACE  &kp RET  &trans          &trans
+                            &kp LPAR      &kp RPAR   &kp UNDER  &kp RET  &trans          &trans
             >;
         };
 
@@ -115,8 +115,8 @@
 
         BUTTON {
             bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &kp LC(Z)  &kp LC(Y)  &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp LC(W)  &trans     &trans     &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(A)  &kp LC(Z)  &kp LC(Y)  &trans     &trans  &trans  &trans  &trans  &trans
 &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)  &trans  &trans  &trans  &trans  &trans
                    &trans     &trans     &trans     &trans  &trans  &trans
             >;
@@ -124,10 +124,10 @@
 
         NAV {
             bindings = <
-&trans  &trans          &kp UP_ARROW  &trans     &trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans
-&trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&trans  &trans          &trans        &trans     &trans  &trans  &msc SCRL_UP    &msc SCRL_DOWN  &trans           &trans
-                        &trans        &trans     &trans  &trans  &trans          &trans
+&trans            &trans          &kp UP_ARROW  &trans     &trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans
+&kp LEFT_SHIFT    &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
+&kp LEFT_CONTROL  &trans          &trans        &trans     &trans  &trans  &msc SCRL_UP    &msc SCRL_DOWN  &trans           &trans
+                                  &trans        &trans     &trans  &trans  &trans          &trans
             >;
         };
 
