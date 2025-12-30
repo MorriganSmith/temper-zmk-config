@@ -125,6 +125,7 @@
         };
 
         BUTTON {
+            display-name = "BUTTON";
             bindings = <
 &kp LC(TAB)      &trans     &kp LC(W)      &kp LC(R)  &kp LC(T)      &trans  &trans  &trans  &trans  &trans
 &kp LC(LS(TAB))  &kp LC(A)  &kp LC(Z)      &kp LC(Y)  &kp LG(LS(S))  &trans  &trans  &trans  &trans  &trans
@@ -134,6 +135,7 @@
         };
 
         NAV {
+            display-name = "NAVIGATION";
             bindings = <
 &trans            &kp HOME        &kp UP_ARROW  &kp END    &trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans
 &kp LEFT_SHIFT    &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
@@ -143,6 +145,7 @@
         };
 
         MEDIA {
+            display-name = "MEDIA";
             bindings = <
 &trans  &trans        &trans        &trans        &trans        &trans          &trans            &trans              &trans      &trans
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp C_PREVIOUS  &kp C_VOLUME_UP   &kp C_VOLUME_DOWN   &kp C_MUTE  &kp C_NEXT
