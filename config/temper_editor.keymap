@@ -137,7 +137,7 @@
             bindings = <
 &trans            &kp HOME        &kp UP_ARROW  &kp END    &trans  &trans  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans
 &kp LEFT_SHIFT    &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&kp LEFT_CONTROL  &trans          &trans        &trans     &trans  &trans  &msc SCRL_UP    &msc SCRL_DOWN  &trans           &trans
+&kp LEFT_CONTROL  &mkp MB4        &mkp MB3      &mkp MB5   &trans  &trans  &msc SCRL_UP    &msc SCRL_DOWN  &trans           &trans
                                   &trans        &trans     &trans  &trans  &trans          &trans
             >;
         };
