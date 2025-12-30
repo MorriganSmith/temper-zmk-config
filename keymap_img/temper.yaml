@@ -23,7 +23,7 @@ layers:
     - {t: ., s: '>'}
     - {t: /, h: BUTTON}
   - - ⎋
-    - {t: ↹, h: NAV}
+    - {t: ↹, h: NAVIGATION}
     - {t: SPACE, h: FN}
     - {t: ENTER, h: NUMBER}
     - SYMBOL
@@ -176,7 +176,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  NAV:
+  NAVIGATION:
   - - {t: ▽, type: trans}
     - HOME
     - UP ARROW
