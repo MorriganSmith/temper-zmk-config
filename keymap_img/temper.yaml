@@ -27,7 +27,7 @@ layers:
     - {t: SPACE, h: FN}
     - {t: ENTER, h: NUMBER}
     - SYMBOL
-    - {t: Alt+LEFT SHIFT, h: MEDIA}
+    - MEDIA
   NUMBER:
   - ['[', '7', '8', '9', ']', Ctl+Y, Ctl+C, Ctl+V, Ctl+X, Ctl+Z]
   - - {t: ;, s: ':'}
@@ -131,17 +131,17 @@ layers:
     - DEL
     - '&bootloader'
   BUTTON:
-  - - {t: ▽, type: trans}
+  - - ⌃↹
     - {t: ▽, type: trans}
     - Ctl+W
+    - Ctl+R
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
+  - - Ctl+Sft+↹
     - Ctl+A
     - Ctl+Z
     - Ctl+Y
@@ -238,7 +238,7 @@ layers:
     - BT CLR
     - {t: ▽, type: trans}
     - PLAY PAUSE
-    - {t: ▽, type: trans}
+    - Alt+LEFT SHIFT
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
