@@ -89,7 +89,7 @@ layers:
     - {t: ▽, type: trans}
   - - (
     - )
-    - SPACE
+    - _
     - RET
     - {type: held}
     - {t: ▽, type: trans}
@@ -133,7 +133,7 @@ layers:
   BUTTON:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - Ctl+W
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -142,7 +142,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - Ctl+A
     - Ctl+Z
     - Ctl+Y
     - {t: ▽, type: trans}
@@ -178,7 +178,7 @@ layers:
     - '&mmv MOVE_UP'
     - '&mkp MB2'
     - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
+  - - LEFT SHIFT
     - LEFT ARROW
     - ↓
     - →
@@ -188,7 +188,7 @@ layers:
     - '&mmv MOVE_DOWN'
     - '&mmv MOVE_RIGHT'
     - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
+  - - ⌃
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
