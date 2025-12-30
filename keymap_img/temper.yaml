@@ -27,7 +27,7 @@ layers:
     - SPACE
     - {t: ENTER, h: NUMBER}
     - SYMBOL
-    - '&td0'
+    - FN
   NUMBER:
   - ['[', '7', '8', '9', ']', Ctl+Y, Ctl+C, Ctl+V, Ctl+X, Ctl+Z]
   - - {t: ;, s: ':'}
@@ -55,7 +55,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: BSPC, type: held}
     - DEL
-    - BT CLR ALL
+    - {t: ▽, type: trans}
   SYMBOL:
   - - '{'
     - '&'
@@ -72,21 +72,21 @@ layers:
     - '%'
     - ^
     - +
-    - {t: ']', s: '}'}
-    - \
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
     - {t: '[', s: '{'}
     - {t: ']', s: '}'}
-    - )
+    - {t: ▽, type: trans}
   - - '~'
     - '!'
     - '@'
     - '#'
     - '|'
     - {t: ▽, type: trans}
-    - +
+    - {t: ▽, type: trans}
     - '{'
     - '}'
-    - '|'
+    - {t: ▽, type: trans}
   - - (
     - )
     - SPACE
@@ -94,30 +94,30 @@ layers:
     - {type: held}
     - {t: ▽, type: trans}
   FN:
-  - - {t: ▽, type: trans}
-    - F1
-    - F2
-    - F3
-    - F4
+  - - F12
+    - F7
+    - F8
+    - F9
+    - {t: ▽, type: trans}
     - F5
     - F6
     - F7
     - F8
     - F9
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+  - - F11
+    - F4
+    - F5
+    - F6
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - PSCRN
     - F10
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+  - - F10
+    - F1
+    - F2
+    - F3
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -129,7 +129,7 @@ layers:
     - {t: ▽, type: trans}
     - BSPC
     - DEL
-    - '&bootloader'
+    - {t: '&bootloader', type: held}
   button:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -170,23 +170,23 @@ layers:
   Navigation:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
+    - UP ARROW
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - '&msc SCRL_UP'
+    - '&mmv MOVE_UP'
+    - '&msc SCRL_DOWN'
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
+    - LEFT ARROW
+    - ↓
+    - →
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - '&mmv MOVE_LEFT'
+    - '&mmv MOVE_DOWN'
+    - '&mmv MOVE_RIGHT'
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
