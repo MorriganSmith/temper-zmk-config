@@ -27,14 +27,23 @@ layers:
     - {t: SPACE, h: FN}
     - {t: ENTER, h: NUMBER}
     - SYMBOL
-    - A
+    - {t: Alt+⇧, h: MEDIA}
   NUMBER:
-  - ['[', '7', '8', '9', ']', Ctl+Y, Ctl+C, Ctl+V, Ctl+X, Ctl+Z]
+  - - '['
+    - '7'
+    - '8'
+    - '9'
+    - {t: '=', s: +}
+    - Ctl+Y
+    - Ctl+C
+    - Ctl+V
+    - Ctl+X
+    - Ctl+Z
   - - {t: ;, s: ':'}
     - '4'
     - '5'
     - '6'
-    - {t: '=', s: +}
+    - {t: '-', s: _}
     - CAPSLOCK
     - LEFT SHIFT
     - ⌃
@@ -44,7 +53,7 @@ layers:
     - '1'
     - '2'
     - '3'
-    - {t: \, s: '|'}
+    - +
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -81,7 +90,7 @@ layers:
     - '!'
     - '@'
     - '#'
-    - '|'
+    - {t: \, s: '|'}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - '{'
@@ -99,11 +108,11 @@ layers:
     - F8
     - F9
     - {t: ▽, type: trans}
-    - F5
-    - F6
-    - F7
-    - F8
-    - F9
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
   - - F11
     - F4
     - F5
@@ -113,7 +122,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - PSCRN
-    - F10
+    - {t: ▽, type: trans}
   - - F10
     - F1
     - F2
@@ -135,7 +144,7 @@ layers:
     - {t: ▽, type: trans}
     - Ctl+W
     - Ctl+R
-    - {t: ▽, type: trans}
+    - Ctl+T
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -145,7 +154,7 @@ layers:
     - Ctl+A
     - Ctl+Z
     - Ctl+Y
-    - {t: ▽, type: trans}
+    - Gui+Sft+S
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -161,7 +170,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
+  - - Ctl+Alt+S
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -169,9 +178,9 @@ layers:
     - {t: ▽, type: trans}
   NAV:
   - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - HOME
     - UP ARROW
-    - {t: ▽, type: trans}
+    - END
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - '&mkp MB1'
@@ -189,7 +198,7 @@ layers:
     - '&mmv MOVE_RIGHT'
     - {t: ▽, type: trans}
   - - ⌃
-    - BT CLR
+    - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -246,7 +255,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {type: held}
 combos:
 - p: [16, 17]
   k: BACKSPACE
