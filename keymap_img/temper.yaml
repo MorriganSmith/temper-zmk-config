@@ -24,10 +24,10 @@ layers:
     - {t: /, h: button}
   - - ⎋
     - {t: ↹, h: Navigation}
-    - SPACE
+    - {t: SPACE, h: FN}
     - {t: ENTER, h: NUMBER}
     - SYMBOL
-    - FN
+    - {t: Sft+⎇, h: media}
   NUMBER:
   - ['[', '7', '8', '9', ']', Ctl+Y, Ctl+C, Ctl+V, Ctl+X, Ctl+Z]
   - - {t: ;, s: ':'}
@@ -126,10 +126,10 @@ layers:
     - {t: ▽, type: trans}
   - - '&sys_reset'
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {type: held}
     - BSPC
     - DEL
-    - {t: '&bootloader', type: held}
+    - '&bootloader'
   button:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -143,8 +143,8 @@ layers:
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - Ctl+Z
+    - Ctl+Y
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -152,10 +152,10 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - Ctl+X
+    - Ctl+C
+    - Ctl+V
+    - Ctl+Y
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -174,9 +174,9 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - '&msc SCRL_UP'
+    - '&mkp MB1'
     - '&mmv MOVE_UP'
-    - '&msc SCRL_DOWN'
+    - '&mkp MB2'
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - LEFT ARROW
@@ -194,8 +194,8 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - '&msc SCRL_UP'
+    - '&msc SCRL_DOWN'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
@@ -204,7 +204,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  Functions:
+  media:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -216,12 +216,28 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
+    - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '2'}
+    - {t: BT, h: '3'}
+    - PREVIOUS
+    - 'VOL
+
+      UP'
+    - 'VOL
+
+      DOWN'
+    - 'VOL
+
+      MUTE'
+    - NEXT
+  - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
+    - BT CLR
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - PLAY PAUSE
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -230,17 +246,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {type: held}
 combos:
 - p: [16, 17]
   k: BACKSPACE
