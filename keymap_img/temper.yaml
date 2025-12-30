@@ -29,17 +29,17 @@ layers:
     - SYMBOL
     - '&td0'
   NUMBER:
-  - ['[', '7', '8', '9', ']', '5', Ctl+C, UP ARROW, Ctl+V, '9']
+  - ['[', '7', '8', '9', ']', Ctl+Y, Ctl+C, Ctl+V, Ctl+X, Ctl+Z]
   - - {t: ;, s: ':'}
     - '4'
     - '5'
     - '6'
     - {t: '=', s: +}
-    - ←
-    - LEFT ARROW
-    - ↓
-    - →
-    - '0'
+    - {t: ▽, type: trans}
+    - LEFT SHIFT
+    - ⌃
+    - ⎇
+    - ⌘
   - - '~'
     - '1'
     - '2'
@@ -57,30 +57,30 @@ layers:
     - DEL
     - BT CLR ALL
   SYMBOL:
-  - - {t: ▽, type: trans}
-    - '!'
-    - '@'
-    - '#'
-    - $
+  - - '{'
+    - '&'
+    - '*'
+    - {t: '-', s: _}
+    - '}'
     - '%'
     - ^
     - '&'
     - '*'
     - (
-  - - {t: ▽, type: trans}
-    - {t: /, s: '?'}
-    - {t: '-', s: _}
-    - {t: '=', s: +}
+  - - ':'
+    - $
+    - '%'
+    - ^
     - {t: '[', s: '{'}
     - {t: ']', s: '}'}
     - \
     - {t: '`', s: '~'}
     - _
     - )
-  - - {t: ▽, type: trans}
-    - OUT USB
-    - OUT BLE
-    - {t: ▽, type: trans}
+  - - '~'
+    - '!'
+    - '@'
+    - '#'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - +
