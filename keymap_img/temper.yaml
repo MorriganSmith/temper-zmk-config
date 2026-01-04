@@ -95,7 +95,7 @@ layers:
     - {t: ▽, type: trans}
     - '{'
     - '}'
-    - {t: ▽, type: trans}
+    - {t: NAVIGATION, h: toggle}
   - - (
     - )
     - _
@@ -182,11 +182,11 @@ layers:
     - UP ARROW
     - END
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - '&mkp MB4'
     - '&mkp MB1'
     - '&mmv MOVE_UP'
     - '&mkp MB2'
-    - {t: ▽, type: trans}
+    - '&mkp MB5'
   - - LEFT SHIFT
     - LEFT ARROW
     - ↓
@@ -196,7 +196,7 @@ layers:
     - '&mmv MOVE_LEFT'
     - '&mmv MOVE_DOWN'
     - '&mmv MOVE_RIGHT'
-    - {t: ▽, type: trans}
+    - '&mkp MB3'
   - - ⌃
     - '&mkp MB4'
     - '&mkp MB3'
@@ -206,7 +206,7 @@ layers:
     - '&msc SCRL_UP'
     - '&msc SCRL_DOWN'
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - {t: NAVIGATION, h: toggle}
   - - {t: ▽, type: trans}
     - {type: held}
     - {t: ▽, type: trans}
@@ -259,5 +259,7 @@ layers:
 combos:
 - p: [16, 17]
   k: BACKSPACE
+  l: [QWERTY, SYMBOL, NUMBER, FN, BUTTON, MEDIA]
 - p: [17, 18]
   k: DEL
+  l: [QWERTY, NUMBER, SYMBOL, FN, BUTTON, MEDIA]
