@@ -214,8 +214,8 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   MEDIA:
-  - - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+  - - EP OFF
+    - EP ON
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
