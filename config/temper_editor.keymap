@@ -27,7 +27,6 @@
 &mt {
     flavor = "tap-preferred";
     require-prior-idle-ms = <125>;
-    tapping-term-ms = <220>;
     quick-tap-ms = <150>;
 };
 
@@ -108,9 +107,9 @@
         layer2 {
             display-name = "SYMBOL";
             bindings = <
-&kp LBRC   &kp AMPERSAND    &kp ASTERISK  &kp MINUS  &kp RBRC       &trans   &trans          &trans    &trans    &trans
+&kp LBRC   &kp AMPERSAND    &kp ASTERISK  &kp MINUS  &kp RBRC       &trans   &trans          &trans    &trans    &tog 5
 &kp COLON  &kp DOLLAR       &kp PERCENT   &kp CARET  &kp PLUS       &trans   &kp LEFT_SHIFT  &kp LBKT  &kp RBKT  &kp APOS
-&kp TILDE  &kp EXCLAMATION  &kp AT        &kp HASH   &kp BACKSLASH  &trans   &trans          &kp LBRC  &kp RBRC  &tog 5
+&kp TILDE  &kp EXCLAMATION  &kp AT        &kp HASH   &kp BACKSLASH  &trans   &trans          &kp LBRC  &kp RBRC  &kp COMMA
                             &kp LPAR      &kp RPAR   &kp UNDER      &kp RET  &trans          &trans
             >;
         };
@@ -133,7 +132,7 @@
 &kp LC(TAB)      &trans     &kp LC(W)      &kp LC(R)  &kp LC(T)      &trans  &trans  &trans  &trans  &trans
 &kp LC(LS(TAB))  &kp LC(A)  &kp LC(Z)      &kp LC(Y)  &kp LG(LS(S))  &trans  &trans  &trans  &trans  &trans
 &trans           &kp LC(X)  &kp LC(C)      &kp LC(V)  &kp LC(Y)      &trans  &trans  &trans  &trans  &trans
-                            &kp LC(LA(S))  &trans     &trans         &trans  &trans  &trans
+                            &kp LC(LA(S))  &trans     &kp LC(S)      &trans  &trans  &trans
             >;
         };
 
