@@ -141,12 +141,12 @@ layers:
     - '&bootloader'
   BUTTON:
   - - ⌃↹
-    - {t: ▽, type: trans}
+    - Ctl+D
     - Ctl+W
     - Ctl+R
     - Ctl+T
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - '&auto_hight'
+    - '&auto_width'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -171,22 +171,13 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   - - Ctl+Alt+S
-    - {t: ▽, type: trans}
-    - Ctl+S
+    - '&delete'
+    - '&insert'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   NAVIGATION:
-  - - {t: ▽, type: trans}
-    - HOME
-    - UP ARROW
-    - END
-    - {t: ▽, type: trans}
-    - '&mkp MB4'
-    - '&mkp MB1'
-    - '&mmv MOVE_UP'
-    - '&mkp MB2'
-    - '&mkp MB5'
+  - [PG UP, HOME, UP ARROW, END, PG DN, '&mkp MB4', '&mkp MB1', '&mmv MOVE_UP', '&mkp MB2', '&mkp MB5']
   - - LEFT SHIFT
     - LEFT ARROW
     - ↓
