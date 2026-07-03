@@ -67,6 +67,36 @@
         };
     };
 
+    macros {
+        insert: insert {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp LEFT_SHIFT &kp PLUS>;
+            label = "INSERT";
+        };
+
+        delete: delete {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &kp MINUS>;
+            label = "DELETE";
+        };
+
+        auto_width: auto_width {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp H &kp O &kp I>;
+            label = "AUTO_WIDTH";
+        };
+
+        auto_hight: auto_hight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp H &kp O &kp A>;
+            label = "AUTO_HIGHT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -129,20 +159,20 @@
         BUTTON {
             display-name = "BUTTON";
             bindings = <
-&kp LC(TAB)      &trans     &kp LC(W)      &kp LC(R)  &kp LC(T)      &trans  &trans  &trans  &trans  &trans
-&kp LC(LS(TAB))  &kp LC(A)  &kp LC(Z)      &kp LC(Y)  &kp LG(LS(S))  &trans  &trans  &trans  &trans  &trans
-&trans           &kp LC(X)  &kp LC(C)      &kp LC(V)  &kp LC(Y)      &trans  &trans  &trans  &trans  &trans
-                            &kp LC(LA(S))  &trans     &kp LC(S)      &trans  &trans  &trans
+&kp LC(TAB)      &kp LC(D)  &kp LC(W)      &kp LC(R)  &kp LC(T)      &auto_hight  &auto_width  &trans  &trans  &trans
+&kp LC(LS(TAB))  &kp LC(A)  &kp LC(Z)      &kp LC(Y)  &kp LG(LS(S))  &trans       &trans       &trans  &trans  &trans
+&trans           &kp LC(X)  &kp LC(C)      &kp LC(V)  &kp LC(Y)      &trans       &trans       &trans  &trans  &trans
+                            &kp LC(LA(S))  &delete    &insert        &trans       &trans       &trans
             >;
         };
 
         NAV {
             display-name = "NAVIGATION";
             bindings = <
-&trans            &kp HOME        &kp UP_ARROW  &kp END    &trans  &mkp MB4  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &mkp MB5
-&kp LEFT_SHIFT    &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB3
-&kp LEFT_CONTROL  &mkp MB4        &mkp MB3      &mkp MB5   &trans  &trans    &msc SCRL_UP    &msc SCRL_DOWN  &trans           &tog 5
-                                  &trans        &trans     &trans  &trans    &trans          &trans
+&kp PG_UP         &kp HOME        &kp UP_ARROW  &kp END    &kp PG_DN  &mkp MB4  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &mkp MB5
+&kp LEFT_SHIFT    &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans     &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB3
+&kp LEFT_CONTROL  &mkp MB4        &mkp MB3      &mkp MB5   &trans     &trans    &msc SCRL_UP    &msc SCRL_DOWN  &trans           &tog 5
+                                  &trans        &trans     &trans     &trans    &trans          &trans
             >;
         };
 
